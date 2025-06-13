@@ -2,7 +2,7 @@ name: Deploy to testing server
 # This workflow will deploy the application to a testing server using SSH.
 # It will pull the latest changes from the 'dev' branch, build the application, and start it using PM2.
 env:
-  APP_PATH: "/var/www/location/ui" 
+  APP_PATH: "/var/www/location/ui/location" 
 on:
   push:
     branches: [ "dev" ]
