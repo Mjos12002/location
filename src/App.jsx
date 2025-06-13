@@ -22,7 +22,7 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Edit <code>src/App.jsx</code> if you want it to take effect.
         </p>
         <p>
           We are working on the <code>location</code> feature, which will allow you to manage and display locations dynamically.
