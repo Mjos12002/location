@@ -24,6 +24,9 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> if you want it to take effect.
         </p>
+        <span>
+          It is coming right now
+        </span>
         <p>
           We are working on the <code>location</code> feature, which will allow you to manage and display locations dynamically.
         </p>
