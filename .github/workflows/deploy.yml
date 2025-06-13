@@ -1,0 +1,28 @@
+name: Deploy to testing server
+# This workflow will deploy the application to a testing server using SSH.
+# It will pull the latest changes from the 'dev' branch, build the application, and start it using PM2.
+env:
+  APP_PATH: "/var/www/location/ui" 
+on:
+  push:
+    branches: [ "dev" ]
+  pull_request:
+    branches: [ "dev" ]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: executing remote ssh commands
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.KEY }}
+          script: |
+            cd ${{ env.APP_PATH }}
+            git add .
+            git pull origin dev
+            npm run build
+            pm2 start "npm run start"
