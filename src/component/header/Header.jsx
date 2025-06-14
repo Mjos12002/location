@@ -1,8 +1,8 @@
-
+import HeaderStyle from './style/Header.module.css'
 
 var Header = () => {
     return (
-        <div className="header">
+        <div className={HeaderStyle.header}>
         <h1>Location App</h1>
         <p>Find your favorite places</p>
         <span>How is it possible</span>
