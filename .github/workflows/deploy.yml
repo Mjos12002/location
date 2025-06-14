@@ -26,4 +26,3 @@ jobs:
             git add .
             git pull origin dev
             npm run build
-            pm2 start "npm run dev"
