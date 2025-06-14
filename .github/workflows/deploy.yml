@@ -23,7 +23,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             cd ${{ env.APP_PATH }}
-            npm install
             git add .
+            git commit -m "Deploying changes"
             git pull origin dev
+            npm install
             npm run build
