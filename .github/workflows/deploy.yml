@@ -23,7 +23,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           script: |
             cd ${{ env.APP_PATH }}
-            sudo npm install
+            npm install
             git add .
             git pull origin dev
             npm run build
