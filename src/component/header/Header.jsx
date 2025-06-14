@@ -3,14 +3,14 @@ import HeaderStyle from './style/Header.module.css'
 var Header = () => {
     return (
         <div className={HeaderStyle.header}>
-        <h1>Location App</h1>
-        <p>Find your favorite places</p>
-        <span>How is it possible</span>
-        <span>With the help of React</span>
-        <span>And the power of APIs</span>
-        <span>And the magic of JavaScript</span>
-        <span>And the beauty of CSS</span>
-        <span>And the creativity of developers</span>
+            <div className={HeaderStyle.mainContainer}>
+                <span className={HeaderStyle.logo}>Parking Finder</span>
+                <ul className={HeaderStyle.navbar}>
+                    <li className={HeaderStyle.navItem}>Home</li>
+                    <li className={HeaderStyle.navItem}>About</li>
+                    <li className={HeaderStyle.navItem}>Contact</li>
+                </ul>
+            </div>
         </div>
     )
 }

@@ -1,4 +1,34 @@
 .header {
     width: 100%;
-    background-color: #02793b;
+    color: #02793b;
+    padding: 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.mainContainer {
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+.logo {
+    height: 3em;
+    padding: 0.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    font-size: 1.4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
 }
